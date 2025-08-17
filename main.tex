@@ -1,0 +1,80 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+
+\usepackage{beamerbasenavigation}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{tabularx}
+%\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{ifthen}
+\usepackage{multirow}
+
+\title[Title running]{Metastability in ??}
+\subtitle{subtitle}
+
+\author[Author running]{
+  Alessandro Gubbiotti
+}
+
+\institute[]{%
+  Gran Sasso Science Institute (GSSI), L'Aquila, Italy\\
+  \texttt{email@gssi.infn.it}
+}
+
+\date{}
+
+%%%%%%%%%%%%%%%  OPTIONS
+\input{gssi}
+
+\makeatother
+
+
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+\makeatletter
+\begin{document}
+
+\AtBeginSubsection[]
+{
+   \begin{frame}
+       \frametitle{Outline}
+       \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+}
+\AtBeginSection[]
+{
+   \begin{frame}
+       \frametitle{Outline}
+       \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+}
+
+\frame{\titlepage}
+
+\frame{\frametitle{Frametitle}
+To \hl{highlight} part of the text use the \texttt{\textbackslash hl\{\}} command
+}
+
+
+
+\end{document}

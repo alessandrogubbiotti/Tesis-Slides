@@ -1,0 +1,64 @@
+
+%%%%%%%%%%%%%%%%%%%%GSSI
+\titlegraphic{\includegraphics[height=1.5cm]{logo-gssi.png}}
+\setbeamercovered{transparent}
+\mode<presentation>
+
+\usetheme{Boadilla}
+
+\setbeamertemplate{title page}{
+  \begin{center}
+    % --- logos at the top ---
+    \inserttitlegraphic \\[2em]
+
+    % --- title and meta info ---
+    \usebeamerfont{title}\inserttitle\par
+    \bigskip
+    \usebeamerfont{subtitle}\insertsubtitle\par
+    \bigskip
+    \usebeamerfont{author}\insertauthor\par
+    \usebeamerfont{institute}\insertinstitute\par
+    \usebeamerfont{date}\insertdate\par
+  \end{center}
+}
+
+\definecolor{gssiorange}{HTML}{F77100}
+\definecolor{gssiorangeone}{HTML}{F78100}
+\definecolor{gssiorangetwo}{HTML}{F79100}
+
+\definecolor{gssiorangeOpposite}{HTML}{088EFF}
+\definecolor{gssiorangeoneOpposite}{HTML}{087EFF}
+\definecolor{gssiorangetwoOpposite}{HTML}{086EFF}
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=gssiorange}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=gssiorangeone}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=gssiorangetwo}
+
+\setbeamercolor{title}{fg=gssiorange}
+\setbeamercolor{frametitle}{fg=gssiorange}
+\setbeamercolor{structure}{fg=gssiorange}
+
+\setbeamercolor{block title}{fg=gssiorange,bg= gssiorange!10}
+\setbeamercolor{block body}{fg=black,bg= gssiorange!5}
+
+\setbeamercolor{block title example}{fg=gssiorangeOpposite,bg= gssiorangeOpposite!10}
+\setbeamercolor{block body example}{fg= black,bg= gssiorangeOpposite!5}
+\setbeamercolor{block example itemize item}{bg= gssiorangeOpposite}
+
+\setbeamercolor{description item}{fg = gssiorangeOpposite}
+
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,shadow=false]
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[default]
+\setbeamertemplate{itemize subsubitem}[default]
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{enumerate subitem}[default]
+\setbeamertemplate{enumerate subsubitem}[default]
+
+\setbeamertemplate{sections/subsections in toc}[circle]
+
+\newcommand{\highlight}[1]{\textbf{\color{gssiorangeOpposite}#1}}
+\newcommand{\hl}[1]{\highlight{{#1}}}
+%%%%%%%%%%%%%%%%%%%%
